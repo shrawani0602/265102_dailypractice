@@ -38,6 +38,8 @@ if(pizza%2 == 0):
 else:
     total=pizza*123
     print(f"total : {total}")
+    
+    
 
 #complex number
 data=int(input("type of data of number :"))
@@ -45,6 +47,9 @@ if(data=="0"):
     print("ZERO")
 else:
     print(type(data))
+    
+    
+    
 #next date
 year = int(input("Input a year: "))
 
@@ -83,7 +88,26 @@ else:
         month += 1
 print("The next date is [yyyy-mm-dd] %d-%d-%d." % (year, month, day))
 
+
+
 #second smallest no. in list
 list=[234,45,67,89,223,227,45]
+k=sorted(set(list))
+print(k[1])
+
+
+
+#change position n with n+1
+def position(list4, n):
+    output= []
+
+    for i in range(len(list4)-n, len(list4)):
+        output.append(list4[i])
+    for i in range(0, len(list4) - n):
+        output.append(list4[i])
+    return output
+
+num = 1
+list5 = [1, 2, 3, 4, 5, 6]
 k=sorted(set(list))
 print(k[1])

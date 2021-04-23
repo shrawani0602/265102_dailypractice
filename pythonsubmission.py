@@ -111,3 +111,16 @@ num = 1
 list5 = [1, 2, 3, 4, 5, 6]
 k=sorted(set(list))
 print(k[1])
+
+
+#max and minimum in set
+s=set([1,2,345,5678,8990])
+print(max(s))
+print(min(s))
+
+#repeated item in tuple
+t=2,3,45,3,3,45,6,7,8,6,78,56,90
+for i in t:
+    l=[]
+    if t.count(i)>1:
+        print(i)

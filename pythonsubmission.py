@@ -124,3 +124,13 @@ for i in t:
     l=[]
     if t.count(i)>1:
         print(i)
+
+#list of tuples into dictionarry
+def Convert(tup, di):
+    di = dict(tup)
+    return di
+
+t = [("akash", 10), ("gaurav", 12), ("anand", 14),
+        ("suraj", 20), ("akhil", 25), ("ashish", 30)]
+dictionary = {}
+print(Convert(t, dictionary))
